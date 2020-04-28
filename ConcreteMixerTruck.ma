@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: ConcreteMixerTruck.ma
-//Last modified: Sun, Apr 26, 2020 11:36:14 PM
+//Last modified: Tue, Apr 28, 2020 03:26:34 AM
 //Codeset: 1252
 requires maya "2019";
 requires "mtoa" "3.1.2";
@@ -15,8 +15,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "701BCD11-4DCC-7C96-31CF-E2B200E5D141";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 66.617900290035593 8.4462096693430535 5.2990816533421636 ;
-	setAttr ".r" -type "double3" -1.5383529106102676 448.99999999962853 0 ;
+	setAttr ".t" -type "double3" 64.038234161329314 18.284366318280391 -10.383112093491272 ;
+	setAttr ".r" -type "double3" -9.9383529109583293 462.59999999957 0 ;
 	setAttr ".rp" -type "double3" 8.8817841970012523e-16 2.4980018054066022e-16 1.4210854715202004e-14 ;
 	setAttr ".rpt" -type "double3" 2.695650730378814e-15 -2.1373129340027682e-16 -4.2845577922488976e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -29080,19 +29080,19 @@ createNode mesh -n "pCylinderShape6" -p "pCylinder6";
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "25D03D51-4095-F944-042B-6581A34697F2";
+	rename -uid "A87AF122-4AA9-B1D4-75A2-72909ED310AD";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "A585F2CF-4F0C-72FF-68C3-B2AF869A3BCD";
+	rename -uid "A4218C76-49F1-FC3D-684C-3E8B5465FAC4";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "7BACD515-46F0-031E-DA8E-739B3778FCD6";
+	rename -uid "07FDD570-4D76-CB98-2045-63B6C7882A78";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "08B1E400-4CAF-1548-39F8-D99BDB6E06AB";
+	rename -uid "9483B1AB-46AF-463C-7CF0-CABFEDA6820B";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "948A987C-4551-C9E1-94C7-449019144603";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "72AE6121-4594-5F22-D3EF-32A814B4FBE6";
+	rename -uid "CB065868-41C8-78D0-F8A9-948A642E909C";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "886F485C-448B-BCFB-BFB9-69B6FA1991E5";
 	setAttr ".g" yes;
